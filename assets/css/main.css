@@ -2093,10 +2093,16 @@ input, select, textarea {
 				#header .icons a:hover {
 					color: #fff;
 				}
+	#profileimage{		
+		position: relative;
+		margin: 1.5em 1.5em 0.1em 1.5em;
+		min-height: 48px;
+		cursor: default;
+	}
 
 	#logo {
 		position: relative;
-		margin: 1.75em 1.5em 1.5em 1.5em;
+		margin: 0.1em 1.5em 1.5em 1.5em;
 		min-height: 48px;
 		cursor: default;
 	}
