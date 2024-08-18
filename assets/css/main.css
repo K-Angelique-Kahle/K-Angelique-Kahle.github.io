@@ -83,12 +83,12 @@ input, select, textarea {
 	}
 
 	body {
-		background: #342d28;
+		background: #1c1c1c;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #342d28;
+		color: #1c1c1c;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -107,12 +107,12 @@ input, select, textarea {
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #191614;
+		color: #e7e7e7;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		color: #26211e;
+		color: #323232;
 		line-height: 1.5em;
 	}
 
@@ -122,7 +122,7 @@ input, select, textarea {
 	}
 
 		h1 a strong, h2 a strong, h3 a strong, h4 a strong, h5 a strong, h6 a strong {
-			color: #342d28;
+			color: #1c1c1c;
 		}
 
 	h2 {
@@ -131,11 +131,11 @@ input, select, textarea {
 	}
 
 		h2.alt {
-			color: #342d28;
+			color: #1c1c1c;
 		}
 
 			h2.alt strong {
-				color: #26211e;
+				color: #323232;
 			}
 
 	h3 {
@@ -156,7 +156,7 @@ input, select, textarea {
 
 	strong, b {
 		font-weight: 300;
-		color: #26211e;
+		color: #323232;
 	}
 
 	em, i {
