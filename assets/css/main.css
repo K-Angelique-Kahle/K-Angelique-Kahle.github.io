@@ -2095,7 +2095,7 @@ input, select, textarea {
 				}
 	#profileimage{		
 		position: relative;
-		margin: 0.2em 1.5em 0.1em 1.5em;
+		margin: 1.5em 1.5em 0.1em 1.5em;
 		min-height: 48px;
 		cursor: default;
 	}
@@ -2446,7 +2446,7 @@ input, select, textarea {
 				width: 275px;
 				z-index: 10002;
 				width: 275px;
-				background: #fff url("images/overlay.png");
+				background: #1c1c1c url("images/title.png");
 				box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
 			}
 
