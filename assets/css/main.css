@@ -2254,7 +2254,9 @@ input, select, textarea {
 
 			#main > section.one {
 				background-color: #1c1c1c;
+				width: 100%;
 				background-image: url("../../images/title.png");
+				background-size: cover;
 			}
 
 			#main > section.two {
