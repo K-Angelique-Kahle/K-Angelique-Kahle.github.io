@@ -2058,6 +2058,14 @@ input, select, textarea {
 		width: 375px;
 	}
 
+	@media screen and (min-width: 961px) {
+
+		#header {
+			font-size: clamp(0.72em, 1.9vh, 1em);
+		}
+
+	}
+
 		#header .top {
 			-moz-flex-grow: 1;
 			-webkit-flex-grow: 1;
@@ -2070,7 +2078,7 @@ input, select, textarea {
 			-webkit-flex-shrink: 0;
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
-			padding: 0.2em 0 0.2em 0;
+			padding: clamp(0.1em, 0.35vh, 0.2em) 0 clamp(0.1em, 0.35vh, 0.2em) 0;
 		}
 
 			#header .bottom > :last-child {
@@ -2078,7 +2086,7 @@ input, select, textarea {
 			}
 
 		#header .icons {
-			font-size: 0.8em;
+			font-size: clamp(0.65em, 1.3vh, 0.8em);
 			text-align: center;
 		}
 
@@ -2095,14 +2103,23 @@ input, select, textarea {
 				}
 	#profileimage{		
 		position: relative;
-		margin: 1.5em 1.5em 0.1em 1.5em;
+		margin: clamp(0.75em, 1.75vh, 1.5em) 1.5em 0.1em 1.5em;
 		min-height: 48px;
 		cursor: default;
 	}
 
+		#profileimage img {
+			display: block;
+			width: min(232px, 22vh);
+			max-width: 100%;
+			height: auto;
+			aspect-ratio: 232 / 309.33;
+			margin-left: auto;
+		}
+
 	#logo {
 		position: relative;
-		margin: 0.1em 1.5em 0.2em 1.5em;
+		margin: 0.1em 1.5em clamp(0.1em, 0.5vh, 0.2em) 1.5em;
 		min-height: 48px;
 		cursor: default;
 	}
@@ -2111,14 +2128,14 @@ input, select, textarea {
 			position: relative;
 			color: #E7E7E7;
 			font-weight: 600;
-			font-size: 1em;
+			font-size: clamp(0.8em, 1.6vh, 1em);
 			line-height: 1em;
 		}
 
 		#logo p {
 			position: relative;
 			display: block;
-			font-size: 0.6em;
+			font-size: clamp(0.5em, 1.05vh, 0.6em);
 			color: rgba(255, 255, 255, 0.5);
 			line-height: 1.25em;
 			margin: 0.5em 0 0 0;
@@ -2142,7 +2159,7 @@ input, select, textarea {
 
 			#nav ul li a {
 				display: block;
-				padding: 0.5em 1.5em 0.5em 1.5em;
+				padding: clamp(0.3em, 0.75vh, 0.5em) 1.5em clamp(0.3em, 0.75vh, 0.5em) 1.5em;
 				color: rgba(255, 255, 255, 0.5);
 				text-decoration: none;
 				outline: 0;
@@ -2156,7 +2173,7 @@ input, select, textarea {
 				#nav ul li a span {
 					position: relative;
 					display: block;
-					font-size: 0.8em;
+					font-size: clamp(0.68em, 1.3vh, 0.8em);
 				}
 
 					#nav ul li a span:before {
