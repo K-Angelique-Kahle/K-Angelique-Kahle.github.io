@@ -2056,7 +2056,7 @@ input, select, textarea {
 		text-align: right;
 		top: 0;
 		width: 375px;
-		--sidebar-header-gap: clamp(0.45em, 1.15vh, 1em);
+		--sidebar-header-gap: clamp(0.45em, 1.5vh, 1em);
 	}
 
 	@media screen and (min-width: 961px) {
