@@ -2086,7 +2086,7 @@ input, select, textarea {
 			}
 
 		#header .icons {
-			font-size: clamp(0.65em, 1.3vh, 0.8em);
+			font-size: clamp(0.85em, 1.5vh, 1.1em);
 			text-align: center;
 		}
 
@@ -2112,10 +2112,10 @@ input, select, textarea {
 	    display: block;
 	    /* This caps the image at 232px wide maximum, but lets it shrink on small screens */
 	    width: 100%;
-	    max-width: 232px; 
+	    max-width: 280px; 
 	    height: auto;
 	    aspect-ratio: 232 / 309.33;
-	    margin-left: auto;
+	    margin: 0 auto;
 	}
 
 
@@ -2130,14 +2130,14 @@ input, select, textarea {
 			position: relative;
 			color: #E7E7E7;
 			font-weight: 600;
-			font-size: clamp(0.8em, 1.6vh, 1em);
+			font-size: clamp(1.1em, 2vh, 1.4em);
 			line-height: 1em;
 		}
 
 		#logo p {
 			position: relative;
 			display: block;
-			font-size: clamp(0.5em, 1.05vh, 0.6em);
+			font-size: clamp(0.75em, 1.2vh, 0.85em);
 			color: rgba(255, 255, 255, 0.5);
 			line-height: 1.25em;
 			margin: 0.5em 0 0 0;
@@ -2175,7 +2175,7 @@ input, select, textarea {
 				#nav ul li a span {
 					position: relative;
 					display: block;
-					font-size: clamp(0.68em, 1.3vh, 0.8em);
+					font-size: clamp(0.9em, 1.5vh, 1.2em);
 				}
 
 					#nav ul li a span:before {
