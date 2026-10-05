@@ -2108,14 +2108,16 @@ input, select, textarea {
 		cursor: default;
 	}
 
-		#profileimage img {
-			display: block;
-			width: min(232px, 22vh);
-			max-width: 100%;
-			height: auto;
-			aspect-ratio: 232 / 309.33;
-			margin-left: auto;
-		}
+	#profileimage img {
+	    display: block;
+	    /* This caps the image at 232px wide maximum, but lets it shrink on small screens */
+	    width: 100%;
+	    max-width: 232px; 
+	    height: auto;
+	    aspect-ratio: 232 / 309.33;
+	    margin-left: auto;
+	}
+
 
 	#logo {
 		position: relative;
