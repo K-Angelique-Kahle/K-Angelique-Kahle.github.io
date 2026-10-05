@@ -11,6 +11,56 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="shortcut icon" href="https://k-angelique-kahle.github.io/images/title_planet.ico" type="image/x-icon">
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#main > section .container p {
+				text-align: justify;
+			}
+
+			#HD86226c .image-pair {
+				display: flex;
+				gap: 1rem;
+				align-items: stretch;
+			}
+
+			#HD86226c .image-pair img {
+				width: calc(50% - 0.5rem);
+				height: 309.33px;
+				object-fit: contain;
+				display: block;
+			}
+
+			#WASP-121b .wrap-figure,
+			#IRAS16293 .wrap-figure {
+				float: left;
+				width: 46%;
+				margin: 0 1.5rem 1rem 0;
+			}
+
+			#WASP-121b .container::after,
+			#IRAS16293 .container::after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+
+			@media screen and (max-width: 980px) {
+				#HD86226c .image-pair {
+					flex-direction: column;
+					gap: 0;
+				}
+
+				#HD86226c .image-pair img {
+					width: 100%;
+				}
+
+				#WASP-121b .wrap-figure,
+				#IRAS16293 .wrap-figure {
+					float: none;
+					width: 100%;
+					margin: 0 0 1rem 0;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -99,9 +149,9 @@
 						<header>
 						<h2>Hot sub-Neptune HD 86226 c breaks cloudy trends</h2>
 						</header>
-						<figure style="width: 100%; margin: 0;">
-						  <img src="images/science_context/trends.png" style="width: 100%; height: 309.33px; object-fit: contain; display: block;"/>
-						  <img src="images/science_context/Envelopes_full_HST_withsolar.png" style="width: 100%; height: 309.33px; object-fit: contain; display: block;"/>
+						<figure class="image-pair" style="width: 100%; margin: 0;">
+						  <img src="images/science_context/trends.png"/>
+						  <img src="images/science_context/Envelopes_full_HST_withsolar.png"/>
 						</figure>
 						<p>
 						The full paper is linked <a href="https://www.aanda.org/articles/aa/abs/2025/09/aa54916-25/aa54916-25.html">here</a>.
@@ -121,7 +171,7 @@
 						<header>
 						<h2>SiO on the dayside of WASP-121b? Yes, but how much?</h2>
 						</header>
-						<figure style="width: 100%; margin: 0;">
+						<figure class="wrap-figure" style="margin: 0;">
 						  <img src="images/science_context/spectrum_opacities_PAPER_WASP121b_em_panchrom_f1a_base.png" style="width: 100%; height: 309.33px; object-fit: contain; display: block;"/>
 						</figure>
 						
@@ -163,7 +213,7 @@
 						<header>
 						<h2>The molecular environment of the solar-type protostar IRAS 16293-2422</h2>
 						</header>
-					      <figure style="width: 100%; margin: 0;">
+					      <figure class="wrap-figure" style="margin: 0;">
 						  <img src="images/science_context/CO_6-5_-7to24_mom1.png" style="width: 100%; height: 309.33px; object-fit: contain; display: block;"/>
 						</figure>	
 						<p>
