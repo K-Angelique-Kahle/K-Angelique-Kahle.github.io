@@ -2056,6 +2056,7 @@ input, select, textarea {
 		text-align: right;
 		top: 0;
 		width: 375px;
+		--sidebar-header-gap: clamp(0.45em, 1.15vh, 1em);
 	}
 
 	@media screen and (min-width: 961px) {
@@ -2103,7 +2104,7 @@ input, select, textarea {
 				}
 	#profileimage{		
 		position: relative;
-		margin: clamp(0.45em, 1.15vh, 1em) 1.5em 0.05em 1.5em;
+		margin: var(--sidebar-header-gap) 1.5em 0 1.5em;
 		min-height: 48px;
 		cursor: default;
 	}
@@ -2121,7 +2122,7 @@ input, select, textarea {
 
 	#logo {
 		position: relative;
-		margin: 0.05em 1.5em clamp(0.05em, 0.3vh, 0.16em) 1.5em;
+		margin: var(--sidebar-header-gap) 1.5em var(--sidebar-header-gap) 1.5em;
 		min-height: 48px;
 		cursor: default;
 	}
@@ -2202,8 +2203,8 @@ input, select, textarea {
 			font-size: clamp(0.8em, 1.05vh, 0.95em);
 		}
 
-		#profileimage {
-			margin-top: 0.4em;
+		#header {
+			--sidebar-header-gap: 0.4em;
 		}
 
 		#logo p {
@@ -2502,6 +2503,7 @@ input, select, textarea {
 				background: #1c1c1c url("images/title.png");
 				box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
 				font-size: clamp(0.82em, 1.3vh + 0.3vw, 1em);
+				--sidebar-header-gap: 0.5em;
 			}
 
 				#header .top {
@@ -2517,11 +2519,11 @@ input, select, textarea {
 				}
 
 			#logo {
-				margin: 0.75em 1.25em 0.75em 1.25em;
+				margin: var(--sidebar-header-gap) 1.25em var(--sidebar-header-gap) 1.25em;
 			}
 
 			#profileimage {
-				margin: 0.5em 1.25em 0.1em 1.25em;
+				margin: var(--sidebar-header-gap) 1.25em 0 1.25em;
 			}
 
 			#logo p {
@@ -2657,13 +2659,8 @@ input, select, textarea {
 			font-size: clamp(0.72em, 1.15vh, 0.88em);
 		}
 
-		#profileimage {
-			margin-top: 0.35em;
-		}
-
-		#logo {
-			margin-top: 0.5em;
-			margin-bottom: 0.5em;
+		#header {
+			--sidebar-header-gap: 0.35em;
 		}
 
 		#nav ul li a {
